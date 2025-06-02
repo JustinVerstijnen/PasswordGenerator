@@ -2,22 +2,35 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #e0f0ff, #f8f9fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
 }
 
 .container {
-    max-width: 500px;
+    max-width: 900px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 30px;
     background: #ffffff;
-    border-radius: 12px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 50px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 30px;
 }
 
 .mode-select {
@@ -27,31 +40,68 @@ h1 {
     margin-bottom: 20px;
 }
 
+.mode-select label {
+    font-weight: 500;
+}
+
 .customize label {
     display: block;
     margin: 10px 0;
+    color: #374151;
 }
 
-button {
+.generate-btn {
     display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    background-color: #8EAFDA;
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.generate-btn:hover {
+    background-color: #7697c6;
+}
+
+.copy-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #92dba5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.copy-btn:hover {
+    background-color: #92bba5;
 }
 
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    border: 1px solid #ccc;
+    padding: 16px;
+    margin-top: 10px;
+    border: 1px solid #d1d5db;
     border-radius: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.result-wrapper {
+    margin-top: 20px;
 }
