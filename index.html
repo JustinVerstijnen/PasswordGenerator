@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password & Secret Generator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password & Secret Generator</h1>
+
+        <div class="mode-select">
+            <label><input type="radio" name="mode" value="password" checked> Password</label>
+            <label><input type="radio" name="mode" value="secret"> Secret (PSK)</label>
+        </div>
+
+        <div id="customize" class="customize">
+            <label>Password Length: <input type="number" id="length" value="30" min="8" max="256"></label>
+            <label><input type="checkbox" id="uppercase" checked> Include Uppercase</label>
+            <label><input type="checkbox" id="lowercase" checked> Include Lowercase</label>
+            <label><input type="checkbox" id="numbers" checked> Include Numbers</label>
+            <label><input type="checkbox" id="symbols" checked> Include Symbols</label>
+            <label><input type="checkbox" id="excludeSimilar" checked> Exclude Similar Characters</label>
+        </div>
+
+        <button id="generateBtn">Generate</button>
+
+        <input type="text" id="result" readonly placeholder="Your password will appear here">
+
+    </div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
