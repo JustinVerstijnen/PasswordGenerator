@@ -32,16 +32,16 @@
 
         <button id="generateBtn" class="generate-btn"><strong>⌨ Generate password</strong></button>
 
-        <div class="result-wrapper">
+       <div class="result-wrapper">
             <input type="text" id="result" readonly placeholder="Your password will appear here">
             <button class="copy-btn" id="copyBtn"><strong>🗐 Copy</strong></button>
         </div>
+        <div class="footer">
+            <a href="https://github.com/JustinVerstijnen/PasswordGenerator">
+                &copy; <span id="copyright-year">2025</span> Password Generator tool
+            </a>
+        </div>
     </div>
-<div class="footer">
-    <a href="https://github.com/JustinVerstijnen/DNSMegaTool">
-        &copy; <span id="copyright-year">2025</span> DNS MEGAtool by Justin Verstijnen
-    </a>
-</div>
 <script>
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
 </script>
